@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Young-serif";
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+    /* Colors: */
+
+    --stone-1: hsl(30, 54%, 90%);
+    --stone-2: hsl(30, 18%, 87%);
+    --stone-3: hsl(30, 10%, 34%);
+    --stone-4: hsl(24, 5%, 18%);
+    
+    --brown: hsl(14, 45%, 36%);
+
+    --rose-1: hsl(332, 51%, 32%);
+    --rose-2: hsl(330, 100%, 98%);
+
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-3)
+}
+
+body {
+    background: var(--stone-1);
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+hr {
+    color: var(--stone-1);
+    opacity: 25%;
+    margin: 30px 0 30px 0;
+}
+p {
+    font-size: 16px;
+}
+table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0 10px;
+}
+table td, table th {
+    border-bottom: 1px solid var(--stone-1);
+    vertical-align: middle;
+    line-height: 40px;
+}
+table tr:last-child th, table tr:last-child td {
+    border-bottom: none;
+}
+th {
+    font-weight: normal;
+    text-indent: 20px;
+}
+td {
+    font-weight: bold;
+    color: var(--brown);
+}
+li {
+    padding: 5px 20px;
+}
+
+li::marker {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+.container {
+    border-radius: 20px;
+}
+.main-div {
+    width: 600px;
+    margin: 100px auto 100px auto;
+    padding: 30px;
+    background: white;
+}
+.prep-time-div {
+    background: var(--rose-2);
+    padding: 5px 35px;
+}
+.title {
+    font-family: "Young-serif";
+}
+.subtitle {
+    color: var(--brown);
+}
+.mini-title {
+    color: var(--rose-1);
+}
