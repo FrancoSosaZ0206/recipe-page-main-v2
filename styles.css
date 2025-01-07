@@ -26,6 +26,8 @@
 
 body {
     background: var(--stone-1);
+    margin: 0;
+    padding: 0;
 }
 img {
     width: 100%;
@@ -69,25 +71,50 @@ li::marker {
     font-weight: bold;
 }
 
-.container {
+.main-container, .prep-time-container {
     border-radius: 20px;
 }
-.main-div {
-    width: 600px;
+.main-container {
+    width: 650px;
     margin: 100px auto 100px auto;
     padding: 30px;
     background: white;
 }
-.prep-time-div {
+.prep-time-container {
     background: var(--rose-2);
     padding: 5px 35px;
 }
-.title {
+.title, subtitle {
     font-family: "Young-serif";
+}
+.title {
+    font-weight: 700;
 }
 .subtitle {
     color: var(--brown);
+    font-weight: 600;
 }
 .mini-title {
     color: var(--rose-1);
+}
+.attribution {
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        border-radius: 0;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+    .text-container {
+        padding: 0 30px 0 30px;
+    }
+    .prep-time-container {
+        padding: 5px 17px;
+    }
 }
